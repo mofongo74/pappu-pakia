@@ -243,9 +243,10 @@
       self.clones.forEach(function(clone, index) {
         if (clone.x > mit.W || clone.y < 0 || clone.y > mit.H)
           self.clones.splice(index, 1);
-
-        clone.x += utils.randomNumber(500, 1000);
-        clone.y += utils.randomNumber(-2000, 2000);
+        /*clone.x += utils.randomNumber(500, 1000);
+        clone.y += utils.randomNumber(-2000, 2000);*/
+				clone.x += utils.randomNumber(20, 40);
+        clone.y += utils.randomNumber(-30, 30);
 
         clone.draw(ctx);
       });
